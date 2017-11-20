@@ -28,12 +28,13 @@ patterns: [
     comment: "Basic keywords"
     match: "(?x)(?<!-)(\\b|^)
             (end|block:|type|type-let|newtype|include|import|provide|provide-types|as|
-             fun|lam|doc:|where:|check:|examples:|
+             fun|lam|doc:|where:|check|examples|
              is==|is=~|is<=>|is-not==|is-not=~|is-not<=>|is|is-not|satisfies|violates|
              raises|does-not-raise|raises-violates|raises-satisfies|raises-other-than|
              data|with:|sharing:|deriving|
              for|from|and|or|not|
-             if|else|when|cases|ask|then:|otherwise:)
+             if|else|when|cases|ask|then:|otherwise:|
+             spy)
             (?!-)(\\b|$)"
     name: "keyword.operators.arr"
   }

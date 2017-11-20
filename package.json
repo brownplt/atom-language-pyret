@@ -1,9 +1,9 @@
 {
-  "name": "language-pyret",
+  "name": "atom-language-pyret",
   "version": "0.1.0",
   "description": "Syntax highlighting for the Pyret language.",
   "keywords": [],
-  "repository": "https://github.com/samuela/language-pyret",
+  "repository": "https://github.com/brownplt/atom-language-pyret",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
