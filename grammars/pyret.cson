@@ -6,12 +6,13 @@ fileTypes: [
 patterns: [
   {
     comment: "Delimiters"
-    match: "(!|->|=>|:=|\\[|\\]|{|}|:\\s)"
+    match: "(!|->|(?<!<)=>|\\[|\\]|{|}|:\\s|;|,)"
+    # | \\*| because we want to match "provide *" too
     name: "keyword.other.delimiters.arr"
   }
   {
     comment: "()"
-    match: "(\\(|\\)|\\.|::|=)"
+    match: "(\\(|\\)|\\.|::|:=| \\^ | \\+ | - | \\/ | \\*| >= | <= | <> | == | <=> | =~ |=|>|<)"
     name: "variable.arr"
   }
   {
@@ -48,11 +49,6 @@ patterns: [
   {
     match: "(?<!-)(\\b|^)(true|false|nothing)(?!-)(\\b|$)"
     name: "constant.language"
-  }
-  {
-    comment: "operators"
-    match: "( \\+ | - | \\/ | \\* | > | < | >= | <= | <> )"
-    name: "keyword.operator.arr"
   }
   {
     comment: "multi-line comments"
