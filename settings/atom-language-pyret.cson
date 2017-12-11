@@ -2,4 +2,4 @@
   'editor':
     'commentStart': '# '
     'increaseIndentPattern': ':$'
-    'decreaseIndentPattern': '^\\s*end'
+    'decreaseIndentPattern': '^\\s*end(?!-)\\b'
